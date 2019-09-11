@@ -31,9 +31,9 @@ eureka:
     instance-id: microservicecloud-dept8001
     prefer-ip-address: true     #访问路径可以显示IP地址
 
-info:
+info:     #超链接可以访问资源
   app.name: atguigu-microservicecloud
   company.name: www.atguigu.com
-  build.artifactId: $project.artifactId$
+  build.artifactId: $project.artifactId$   #如果不生效，则用${***}
   build.version: $project.version$
 

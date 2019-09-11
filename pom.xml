@@ -71,22 +71,25 @@
         </dependencies>
     </dependencyManagement>
 
-
+<!-- 	构建项目资源 -->
     <build>
+<!--     				父项目名称 -->
         <finalName>microservicecloud</finalName>
         <resources>
             <resource>
+<!--             			访问该路径得文件 -->
                 <directory>src/main/resources</directory>
                 <filtering>true</filtering>
             </resource>
         </resources>
         <plugins>
             <plugin>
+<!--             			负责解析解读得插件 -->
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-resources-plugin</artifactId>
                 <configuration>
                     <delimiters>
-                        <delimit>$</delimit>
+                        <delimiter>$</delimiter>
                     </delimiters>
                 </configuration>
             </plugin>
